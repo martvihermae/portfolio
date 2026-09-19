@@ -34,10 +34,10 @@ export function createGridView() {
                     text: poi.title,
                     style: {
                         fontFamily: 'sans-serif',
-                        fontSize: 12,
+                        fontSize: Math.round(TILE_SIZE * 0.1875),
                         fill: 0xffffff,
                         wordWrap: true,
-                        wordWrapWidth: TILE_SIZE - 6,
+                        wordWrapWidth: TILE_SIZE - 12,
                         align: 'center',
                     },
                 });
