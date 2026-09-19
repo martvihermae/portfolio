@@ -9,3 +9,50 @@ body {
 body {
     background: #1e1e2e;
 }
+
+.dialog-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 10;
+}
+
+.dialog-overlay.hidden {
+    display: none;
+}
+
+.dialog-box {
+    position: relative;
+    background: #2a2a3d;
+    color: #f0f0f5;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: min(90vw, 480px);
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    font-family: sans-serif;
+}
+
+.dialog-box h2 {
+    margin: 0 0 12px;
+}
+
+.dialog-body a {
+    color: #4a90e2;
+}
+
+.dialog-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    background: none;
+    border: none;
+    color: #f0f0f5;
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+}
